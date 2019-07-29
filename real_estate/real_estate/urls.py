@@ -18,6 +18,7 @@ from django.urls import path, include
 from real_estate import views
 
 urlpatterns = [
+    path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
     path('admin/', admin.site.urls),
     path('items/', include('item.urls')),
     path('users/', include('user.urls')),
