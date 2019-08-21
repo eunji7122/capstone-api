@@ -1,0 +1,16 @@
+{
+  "name": "smartcontract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "caver-js": "^1.0.1",
+    "node-gyp": "^5.0.3",
+    "scrypt": "^6.0.3"
+  }
+}

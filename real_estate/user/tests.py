@@ -1,3 +1,4 @@
-from django.test import TestCase
+import json, subprocess
 
-# Create your tests here.
+signed_tx = json.loads(subprocess.getoutput('node ../smartcontract/test.js'))
+print(signed_tx['rawTransaction'])

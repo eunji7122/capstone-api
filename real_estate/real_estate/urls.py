@@ -21,6 +21,7 @@ urlpatterns = [
     path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
     path('admin/', admin.site.urls),
     path('items/', include('item.urls')),
-    path('users/', include('user.urls')),
+    path('users/', include('user.urls.user_urls')),
+    path('me/', include('user.urls.me_urls')),
     path('media/upload/item_images/<str:file_name>', views.image_view)
 ]
