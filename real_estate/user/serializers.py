@@ -18,7 +18,7 @@ class CreateUserSerializer(serializers.ModelSerializer):
 
 # 접속 중인 유저 시리얼라이저
 class UserSerializer(serializers.ModelSerializer):
-    private_key = serializers.CharField(write_only=True)
+    private_key = serializers.CharField()
 
     class Meta:
         model = User
