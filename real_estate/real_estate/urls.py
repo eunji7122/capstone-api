@@ -23,5 +23,6 @@ urlpatterns = [
     path('items/', include('item.urls')),
     path('users/', include('user.urls.user_urls')),
     path('me/', include('user.urls.me_urls')),
+    path('api/auth/', include('user.urls.phone_auth_urls')),
     path('media/upload/item_images/<str:file_name>', views.image_view)
 ]
